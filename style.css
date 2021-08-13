@@ -159,9 +159,20 @@ a, a:visited{
 .header__icons div{
    padding: 5px;
 }
+.header__lk, .header__version{
+   font-size: 14px;
+   letter-spacing: 0.05em;
+   text-transform: uppercase;
+}
 .header__contacts{
    font-family: 'PF Din Text Comp Pro';
    font-weight: bold;
+   font-size: 22px;
+   line-height: 28px;
+   letter-spacing: 0.05em;
+}
+.header__name{
+   font-size: 19px;
 }
 .header__nav{
    padding: 5px;
@@ -170,6 +181,9 @@ a, a:visited{
 .header__list{
    font-family: 'ALS Hauss';
    font-weight: bold;
+   font-size: 14px;
+   letter-spacing: 0.1em;
+   text-transform: uppercase;
    display: flex;
    white-space: nowrap;
    padding: 0 10px;
@@ -189,8 +203,11 @@ a, a:visited{
 }
 .columns__about{
    padding: 20px 0;
-   font-size: 20px;
+   font-size: 24px;
+   line-height: 33px;
    text-align: center;
+   letter-spacing: 0.05em;
+   text-transform: uppercase;
 }
 .columns__info{
    background-color: #11305D;
@@ -201,7 +218,15 @@ a, a:visited{
 }
 .columns__info h1{
    padding: 20px 0;
-   font-size: 20px;
+   font-size: 35px;
+   letter-spacing: 0.05em;
+   text-transform: uppercase;
+
+}
+.columns__info p{
+   font-size: 24px;
+   letter-spacing: 0.05em;
+   text-transform: uppercase;
 }
 .columns__group{
    display: flex;
@@ -213,14 +238,32 @@ a, a:visited{
 }
 .columns__numerous{
    padding: 20px 0;
-   font-size: 30px;
+   font-size: 43px;
+   letter-spacing: 0.05em;
+   text-transform: uppercase;
 }
 .columns__numerous span{
-   font-size: 14px;
+   font-size: 24px;
+   text-transform: lowercase;
+}
+.columns__content{
+   font-size: 21px;
+   line-height: 29px;
+   letter-spacing: 0.05em;
+   text-transform: uppercase;
 }
 .columns__text, .columns__download, .columns__professional{
    font-family: 'ALS Hauss';
    font-weight: normal;
+}
+.columns__subtitle{
+   font-size: 22px;
+   letter-spacing: 0.1em;
+   text-transform: uppercase;
+}
+.columns__book{
+   font-size: 14px;
+   line-height: 24px;
 }
 .columns__movie{
    width: 100%;
@@ -230,10 +273,26 @@ a, a:visited{
 .columns__title{
    background-color: #11305D;
    color: #fff;
-   font-size: 20px;
+   font-size: 24px;
+   line-height: 33px;
+   letter-spacing: 0.05em;
    text-transform: uppercase;
    text-align: center;
    padding: 40px 0;
+}
+.columns__for{
+   font-size: 35px;
+   line-height: 35px;
+   letter-spacing: 0.05em;
+}
+.columns__download p{
+   font-size: 12px;
+   letter-spacing: 0.5em;
+   text-transform: uppercase;
+}
+.columns__professional{
+   font-size: 14px;
+   line-height: 24px;
 }
 .footer{
    background-color: #11305D;
@@ -254,8 +313,10 @@ a, a:visited{
    display: flex;
    flex-direction: column;
    justify-content: space-between;
-   font-size: 18px;
-   line-height: 25px;
+   font-size: 14px;
+   line-height: 22px;
+   letter-spacing: 0.1em;
+   text-transform: uppercase;
 }
 .footer__list a, .footer__list a:visited{
    color: #fff;
@@ -266,18 +327,30 @@ a, a:visited{
 .footer__phone{
    font-family: 'PF Din Text Comp Pro';
    font-weight: bold;
-   font-size: 20px;
+   font-size: 22px;
+   letter-spacing: 0.05em;
    padding: 10px 0;
 }
+.footer__mail{
+   font-size: 17px;
+   line-height: 23px;
+   letter-spacing: 0.05em;
+}
 .footer__info{
-   line-height: 25px;
+   font-size: 17px;
+   line-height: 23px;
+   letter-spacing: 0.05em;
    display: flex;
    align-items: center;
 }
 .footer span{
    font-weight: bold;
+   line-height: 23px;
+   letter-spacing: 0.05em;
 }
 .footer p{
    text-align: right;
-   font-size: 12px;
+   font-size: 10px;
+   letter-spacing: 0.1em;
+   text-transform: uppercase;
 }
