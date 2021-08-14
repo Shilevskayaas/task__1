@@ -76,39 +76,39 @@ h6{
 /*--------------------*/
 
 @font-face{
-	font-family: 'PF Din Text Comp Pro';
-	src: url('fonts/pfdintextcomppro-bold.eot');
-	src: local('☺'), url('fonts/pfdintextcomppro-bold.woff') format('woff'), url('fonts/pfdintextcomppro-bold.ttf') format('truetype'), url('fonts/pfdintextcomppro-bold.svg') format('svg');
+	font-family: "PF Din Text Comp Pro";
+	src: url("fonts/pfdintextcomppro-bold.eot");
+	src: local("☺"), url("fonts/pfdintextcomppro-bold.woff") format("woff"), url("fonts/pfdintextcomppro-bold.ttf") format("truetype"), url("fonts/pfdintextcomppro-bold.svg") format("svg");
 	font-weight: bold;
 	font-style: normal;
 }
 @font-face{
-	font-family: 'PF Din Text Comp Pro';
-	src: url('fonts/pfdintextcomppro-regular.eot');
-	src: local('☺'), url('fonts/pfdintextcomppro-regular.woff') format('woff'), url('fonts/pfdintextcomppro-regular.ttf') format('truetype'), url('fonts/pfdintextcomppro-regular.svg') format('svg');
+	font-family: "PF Din Text Comp Pro";
+	src: url("fonts/pfdintextcomppro-regular.eot");
+	src: local("☺"), url("fonts/pfdintextcomppro-regular.woff") format("woff"), url("fonts/pfdintextcomppro-regular.ttf") format("truetype"), url("fonts/pfdintextcomppro-regular.svg") format("svg");
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face{
-   font-family: 'ALS Hauss';
-   src: local('ALS Hauss Bold'), local('ALS-Hauss-Bold'),
-       url('fonts/ALSHauss-Bold.woff2') format('woff2'),
-       url('fonts/ALSHauss-Bold.woff') format('woff'),
-       url('fonts/ALSHauss-Bold.ttf') format('truetype');
+   font-family: "ALS Hauss";
+   src: local("ALS Hauss Bold"), local("ALS-Hauss-Bold"),
+       url("fonts/ALSHauss-Bold.woff2") format("woff2"),
+       url("fonts/ALSHauss-Bold.woff") format("woff"),
+       url("fonts/ALSHauss-Bold.ttf") format("truetype");
    font-weight: bold;
    font-style: normal;
  }
  @font-face{
-   font-family: 'ALS Hauss';
-   src: local('ALS Hauss Regular'), local('ALS-Hauss-Regular'),
-       url('fonts/ALSHauss-Regular.woff2') format('woff2'),
-       url('fonts/ALSHauss-Regular.woff') format('woff'),
-       url('fonts/ALSHauss-Regular.ttf') format('truetype');
+   font-family: "ALS Hauss";
+   src: local("ALS Hauss Regular"), local("ALS-Hauss-Regular"),
+       url("fonts/ALSHauss-Regular.woff2") format("woff2"),
+       url("fonts/ALSHauss-Regular.woff") format("woff"),
+       url("fonts/ALSHauss-Regular.ttf") format("truetype");
    font-weight: normal;
    font-style: normal;
  }
 body{
-   font-family: 'PF Din Text Comp Pro';
+   font-family: "PF Din Text Comp Pro";
    font-weight: normal;
    color: #11305D;
 }
@@ -144,7 +144,7 @@ a, a:visited{
    flex: 0 0 316px;
 }
 .header__img{
-   background: url(img/logo.svg) center no-repeat;
+   background: url("img/logo.svg") center no-repeat;
    padding: 150px 0px 10px 10px;
 }
 .header__bar{
@@ -171,29 +171,29 @@ a, a:visited{
 .header__profile p{
    display: block;
    height: 50px;
-   background: url(img/lk.svg) left no-repeat;
+   background: url("img/lk.svg") left no-repeat;
    padding: 17px 0px 0px 50px;
 }
 .header__profile p:hover, .header__profile p:active{
    display: block;
    height: 50px;
-   background: url(img/lkh.svg) left no-repeat;
+   background: url("img/lkh.svg") left no-repeat;
    padding: 17px 0px 0px 50px;
 }
 .header__blind p{
    display: block;
    height: 50px;
-   background: url(img/version.svg) left no-repeat;
+   background: url("img/version.svg") left no-repeat;
    padding: 17px 0px 0px 40px;
 }
 .header__blind p:hover, .header__blind p:active{
    display: block;
    height: 50px;
-   background: url(img/versionh.svg) left no-repeat;
+   background: url("img/versionh.svg") left no-repeat;
    padding: 17px 0px 0px 40px;
 }
 .header__phone{
-   font-family: 'PF Din Text Comp Pro';
+   font-family: "PF Din Text Comp Pro";
    font-weight: bold;
    font-size: 22px;
    line-height: 28px;
@@ -214,20 +214,20 @@ a, a:visited{
 .header__name p{
    display: block;
    height: 50px;
-   background: url(img/app.svg) right no-repeat;
+   background: url("img/app.svg") right no-repeat;
    padding: 17px 50px 0px 0px;
 }
 .header__name p:hover, .header__name p:active{
    display: block;
    height: 50px;
-   background: url(img/apph.svg) right no-repeat;
+   background: url("img/apph.svg") right no-repeat;
    padding: 17px 50px 0px 0px;
 }
 .header__nav{
    color: #11305D;
 }
 .header__list{
-   font-family: 'ALS Hauss';
+   font-family: "ALS Hauss";
    font-weight: bold;
    font-size: 14px;
    letter-spacing: 0.1em;
@@ -275,28 +275,28 @@ a, a:visited{
    padding: 120px 0px 0px 5px;
 }
 .columns__about_1{
-   background: url(img/01.svg) top no-repeat;
+   background: url("img/01.svg") top no-repeat;
 }
 .columns__about_1:hover, .columns__about_1:active{
-   background: url(img/01h.svg) top no-repeat;
+   background: url("img/01h.svg") top no-repeat;
 }
 .columns__about_2{
-   background: url(/img/02.svg) top no-repeat;
+   background: url("img/02.svg") top no-repeat;
 }
 .columns__about_2:hover, .columns__about_2:active{
-   background: url(img/02h.svg) top no-repeat;
+   background: url("img/02h.svg") top no-repeat;
 }
 .columns__about_3{
-   background: url(img/03.svg) top no-repeat;
+   background: url("img/03.svg") top no-repeat;
 }
 .columns__about_3:hover, .columns__about_3:active{
-   background: url(img/03h.svg) top no-repeat;
+   background: url("img/03h.svg") top no-repeat;
 }
 .columns__about_4{
-   background: url(img/04.svg) top no-repeat;
+   background: url("img/04.svg") top no-repeat;
 }
 .columns__about_4:hover, .columns__about_4:active{
-   background: url(img/04h.svg) top no-repeat;
+   background: url("img/04h.svg") top no-repeat;
 }
 .columns__info{
    background-color: #11305D;
@@ -346,7 +346,7 @@ a, a:visited{
    text-transform: uppercase;
 }
 .columns__text, .columns__download, .columns__professional{
-   font-family: 'ALS Hauss';
+   font-family: "ALS Hauss";
    font-weight: normal;
 }
 .columns__text{
@@ -457,11 +457,11 @@ a, a:visited{
    flex: 0 0 316px;
 }
 .footer__img{
-   background: url(img/logof.svg) center no-repeat;
+   background: url("img/logof.svg") center no-repeat;
    padding: 200px 0px 0px 10px;
 }
 .footer__list{
-   font-family: 'ALS Hauss';
+   font-family: "ALS Hauss";
    font-weight: bold;
    display: flex;
    flex-direction: column;
@@ -478,7 +478,7 @@ a, a:visited{
    line-height: 25px;
 }
 .footer__phone{
-   font-family: 'PF Din Text Comp Pro';
+   font-family: "PF Din Text Comp Pro";
    font-weight: bold;
    font-size: 22px;
    letter-spacing: 0.05em;
@@ -491,20 +491,20 @@ a, a:visited{
 }
 .footer__fb{
    width: 200px;
-   background: url(img/fb.svg) left no-repeat;
+   background: url("img/fb.svg") left no-repeat;
    padding: 1px 40px 90px 0px;
 }
 .footer__fb:hover, .footer__fb:active{
    height: 200px;
-   background: url(img/fbh.svg) left no-repeat;
+   background: url("img/fbh.svg") left no-repeat;
    padding: 1px 40px 90px 0px;
 }
 .footer__in{
-   background: url(img/in.svg) right no-repeat;
+   background: url("img/in.svg") right no-repeat;
    padding: 1px 0px 90px 40px;
 }
 .footer__in:hover, .footer__in:active{
-   background: url(img/inh.svg) right no-repeat;
+   background: url("img/inh.svg") right no-repeat;
    padding: 1px 0px 90px 40px;
 }
 .footer__info{
