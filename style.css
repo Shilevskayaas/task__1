@@ -125,14 +125,12 @@ body {
 }
 .content {
    flex: 1 1 auto;
-   
 }
 .content::before{
    content: "";
    display: block;
    width: 100%;
    height: 1px;
-   
    background-color: #11305D;
 }
 .header__text, .header__info, .header__list{
@@ -172,13 +170,16 @@ a, a:visited{
    letter-spacing: 0.05em;
    text-transform: uppercase;   
 }
-.header__man{
-
-}
 .header__profile p{
    display: block;
    height: 50px;
    background: url(/img/lk.svg) left no-repeat;
+   padding: 17px 0px 0px 50px;
+}
+.header__profile p:hover, .header__profile p:active{
+   display: block;
+   height: 50px;
+   background: url(/img/lkh.svg) left no-repeat;
    padding: 17px 0px 0px 50px;
 }
 .header__blind p{
@@ -187,19 +188,33 @@ a, a:visited{
    background: url(/img/version.svg) left no-repeat;
    padding: 17px 0px 0px 40px;
 }
-.header__contacts{
+.header__blind p:hover, .header__blind p:active{
+   display: block;
+   height: 50px;
+   background: url(/img/versionh.svg) left no-repeat;
+   padding: 17px 0px 0px 40px;
+}
+.header__phone{
    font-family: 'PF Din Text Comp Pro';
    font-weight: bold;
    font-size: 22px;
    line-height: 28px;
    letter-spacing: 0.05em;
 }
+.header__mail{
+   font-size: 22px;
+   font-weight: normal;
+}
+.header__mail:hover, .header__mail:active{
+   padding-bottom: 3px;
+   width: 105px;
+   border-bottom: 2px solid #11305D;;
+}
 .header__app{
    
 }
 .header__name{
    font-size: 19px;
-  
 }
 .header__name p{
    display: block;
@@ -207,8 +222,13 @@ a, a:visited{
    background: url(/img/app.svg) right no-repeat;
    padding: 17px 50px 0px 0px;
 }
+.header__name p:hover, .header__name p:active{
+   display: block;
+   height: 50px;
+   background: url(/img/apph.svg) right no-repeat;
+   padding: 17px 50px 0px 0px;
+}
 .header__nav{
-   padding: 5px;
    color: #11305D;
 }
 .header__list{
@@ -223,9 +243,22 @@ a, a:visited{
    
 }
 .header__list li{
-   padding: 0px 0px 0px 45px;  
+   padding: 0px 0px 0px 44px;  
    white-space: nowrap; 
+   line-height: 5;
 } 
+.header__list li:after {
+   display: block;
+   content: "";
+   height: 8px;
+   width: 0%;
+   background-color: #11305D;
+   transition: width 0.1s ease-in-out;
+}
+.header__list li:hover:after, .header__list li:focus:after {
+   width: 100%;
+}
+
 .columns__row{
    display: flex;
    text-transform: uppercase;
@@ -250,14 +283,26 @@ a, a:visited{
 .columns__about_1{
    background: url(/img/01.svg) top no-repeat;
 }
+.columns__about_1:hover, .columns__about_1:active{
+   background: url(/img/01h.svg) top no-repeat;
+}
 .columns__about_2{
    background: url(/img/02.svg) top no-repeat;
+}
+.columns__about_2:hover, .columns__about_2:active{
+   background: url(/img/02h.svg) top no-repeat;
 }
 .columns__about_3{
    background: url(/img/03.svg) top no-repeat;
 }
+.columns__about_3:hover, .columns__about_3:active{
+   background: url(/img/03h.svg) top no-repeat;
+}
 .columns__about_4{
    background: url(/img/04.svg) top no-repeat;
+}
+.columns__about_4:hover, .columns__about_4:active{
+   background: url(/img/04h.svg) top no-repeat;
 }
 .columns__info{
    background-color: #11305D;
@@ -432,7 +477,7 @@ a, a:visited{
    letter-spacing: 0.1em;
    text-transform: uppercase;
 }
-.footer__list a, .footer__list a:visited{
+.footer a, .footer a:visited, .footer{
    color: #fff;
 }
 .footer__contact{
@@ -450,22 +495,47 @@ a, a:visited{
    line-height: 23px;
    letter-spacing: 0.05em;
 }
-.footer__social{
-   background: url(/img/social.svg) left no-repeat;
-   padding: 140px 0px 0px 0px;
+.footer__fb{
+   width: 200px;
+   background: url(/img/fb.svg) left no-repeat;
+   padding: 1px 40px 90px 0px;
+}
+.footer__fb:hover, .footer__fb:active{
+   height: 200px;
+   background: url(/img/fbh.svg) left no-repeat;
+   padding: 1px 40px 90px 0px;
+}
+.footer__in{
+   background: url(/img/in.svg) right no-repeat;
+   padding: 1px 0px 90px 40px;
+}
+.footer__in:hover, .footer__in:active{
+   background: url(/img/inh.svg) right no-repeat;
+   padding: 1px 0px 90px 40px;
 }
 .footer__info{
    font-size: 17px;
    line-height: 23px;
    letter-spacing: 0.05em;
    display: flex;
-   align-items: center;
+   flex-direction: column;
+   justify-content: center;
+}
+.footer__info a{
+   font-weight: bold;
 }
 .footer span{
    font-weight: bold;
    line-height: 23px;
    letter-spacing: 0.05em;
+   color: #fff;
 }
+
+.footer span:hover, .footer span:active{
+   padding-bottom: 3px;
+   border-bottom: 2px solid #fff;
+}
+
 .footer__copy{
    padding: 0 33px 10px 0;
    text-align: right;
