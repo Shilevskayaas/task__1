@@ -147,6 +147,10 @@ a, a:visited{
 .header__logo{
    flex: 0 0 316px;
 }
+.header__img{
+   background: url(/img/logo.svg) center no-repeat;
+   padding: 150px 0px 10px 10px;
+}
 .header__bar{
    
    flex: 1 1 auto;
@@ -166,7 +170,22 @@ a, a:visited{
 .header__lk, .header__version{
    font-size: 14px;
    letter-spacing: 0.05em;
-   text-transform: uppercase;
+   text-transform: uppercase;   
+}
+.header__man{
+
+}
+.header__profile p{
+   display: block;
+   height: 50px;
+   background: url(/img/lk.svg) left no-repeat;
+   padding: 17px 0px 0px 50px;
+}
+.header__blind p{
+   display: block;
+   height: 50px;
+   background: url(/img/version.svg) left no-repeat;
+   padding: 17px 0px 0px 40px;
 }
 .header__contacts{
    font-family: 'PF Din Text Comp Pro';
@@ -181,6 +200,12 @@ a, a:visited{
 .header__name{
    font-size: 19px;
   
+}
+.header__name p{
+   display: block;
+   height: 50px;
+   background: url(/img/app.svg) right no-repeat;
+   padding: 17px 50px 0px 0px;
 }
 .header__nav{
    padding: 5px;
@@ -206,16 +231,33 @@ a, a:visited{
    text-transform: uppercase;
 }
 .columns__icons{
-   padding: 20px;
+   padding: 50px;
    flex: 0 1 25%;
 }
 .columns__about{
-   padding: 20px 0;
+   padding: 30px 0;
    font-size: 24px;
    line-height: 33px;
    text-align: center;
    letter-spacing: 0.05em;
    text-transform: uppercase;
+}
+.columns__about p{
+   display: block;
+   height: 180px;
+   padding: 120px 0px 0px 5px;
+}
+.columns__about_1{
+   background: url(/img/01.svg) top no-repeat;
+}
+.columns__about_2{
+   background: url(/img/02.svg) top no-repeat;
+}
+.columns__about_3{
+   background: url(/img/03.svg) top no-repeat;
+}
+.columns__about_4{
+   background: url(/img/04.svg) top no-repeat;
 }
 .columns__info{
    background-color: #11305D;
@@ -366,11 +408,18 @@ a, a:visited{
 .footer__row{
    display: flex;
    margin: 0px -5px;
-   padding: 30px;
+   padding: 30px 10px 0px 10px;
 }
 .footer__logo, .footer__nav, .footer__contact, .footer__info{
    padding: 0px 5px;
    flex: 0 1 25%;
+}
+.footer__logo{
+   flex: 0 0 316px;
+}
+.footer__img{
+   background: url(/img/logof.svg) center no-repeat;
+   padding: 200px 0px 0px 10px;
 }
 .footer__list{
    font-family: 'ALS Hauss';
@@ -400,6 +449,10 @@ a, a:visited{
    font-size: 17px;
    line-height: 23px;
    letter-spacing: 0.05em;
+}
+.footer__social{
+   background: url(/img/social.svg) left no-repeat;
+   padding: 140px 0px 0px 0px;
 }
 .footer__info{
    font-size: 17px;
