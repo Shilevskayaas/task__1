@@ -122,10 +122,10 @@ body {
 }
 .container {
    margin: 0px auto;
-   
 }
 .content {
    flex: 1 1 auto;
+   
 }
 .content::before{
    content: "";
@@ -143,21 +143,22 @@ a, a:visited{
 }
 .header__row{
    display: flex;
-   padding: 0 0 20px 0;
 }
 .header__logo{
    flex: 0 0 316px;
 }
 .header__bar{
+   
    flex: 1 1 auto;
-   display:flex;
-   flex-direction:column;
+   display: flex;
+   flex-direction: column;
    justify-content: space-between;
 }
 .header__icons{
    display: flex;
    white-space: nowrap;
    justify-content: space-between;
+   padding: 0 20px 0 0;
 }
 .header__icons div{
    padding: 5px;
@@ -174,8 +175,12 @@ a, a:visited{
    line-height: 28px;
    letter-spacing: 0.05em;
 }
+.header__app{
+   
+}
 .header__name{
    font-size: 19px;
+  
 }
 .header__nav{
    padding: 5px;
@@ -189,11 +194,11 @@ a, a:visited{
    text-transform: uppercase;
    display: flex;
    white-space: nowrap;
-   padding: 0 10px;
+   padding: 0 20px 0 0;
+   
 }
 .header__list li{
-   font-size: 30px;
-   padding: 0px 0px 0px 20px;  
+   padding: 0px 0px 0px 45px;  
    white-space: nowrap; 
 } 
 .columns__row{
@@ -227,9 +232,9 @@ a, a:visited{
 
 }
 .columns__info p{
+   margin: 0 auto;
    width: 957px;
    height: 95px;
-   margin: 0 auto;
    font-size: 24px;
    line-height: 33px;
    letter-spacing: 0.05em;
@@ -297,7 +302,6 @@ a, a:visited{
    font-size: 14px;
    line-height: 24px;
 }
-
 .columns__movie{
    height: 467px;
    background-image: url("img/video.jpg");
@@ -409,7 +413,8 @@ a, a:visited{
    line-height: 23px;
    letter-spacing: 0.05em;
 }
-.footer p{
+.footer__copy{
+   padding: 0 33px 10px 0;
    text-align: right;
    font-size: 10px;
    letter-spacing: 0.1em;
