@@ -313,6 +313,7 @@ a, a:visited{
 .columns__info{
    background-color: #11305D;
    color: #fff;
+   font-weight: normal;
    text-align: center;
    padding: 30px;
    text-transform: uppercase;
@@ -326,7 +327,7 @@ a, a:visited{
 }
 .columns__info p{
    margin: 0 auto;
-   width: 957px;
+   width: 85%;
    height: 95px;
    font-size: 24px;
    line-height: 33px;
@@ -353,6 +354,8 @@ a, a:visited{
    text-transform: lowercase;
 }
 .columns__content{
+   width: 66%;
+   margin: 0 auto;
    font-size: 21px;
    line-height: 29px;
    letter-spacing: 0.05em;
@@ -365,16 +368,17 @@ a, a:visited{
 .columns__text{
    display: flex;
    padding: 111px 0;
-   margin: 0px -32px;
+   margin: 0px -16px;
    height: 1491px;
    justify-content: space-between;
+   align-items: space-between;
 }
 .columns__company{
    flex: 0 1 auto;
    display: flex;
    flex-direction: column;
    justify-content: space-between;
-   padding: 0px 32px;
+   padding: 0px 16px;
    width: 50%;
 }
 .columns__we{
@@ -383,8 +387,14 @@ a, a:visited{
    align-self: center;
    justify-content: space-between;
 }
-.columns__picture{
-   max-width: 100%;
+.columns__picture_2, .columns__picture_3{
+   align-self: flex-end;
+}
+.columns__picture_1{
+   align-self: flex-start;
+}
+.columns__picture img{
+   width: 604px;
    height: 467px;
 }
 .columns__subtitle{
@@ -411,6 +421,10 @@ a, a:visited{
    text-align: center;
    padding: 40px 0;
 }
+.columns__title p{
+   width: 720px;
+   margin: 0 auto;
+}
 .columns__application{
    width: 1131px;
    height: 635px;
@@ -431,7 +445,7 @@ a, a:visited{
    letter-spacing: 0.05em;
 }
 .columns__download p{
-   padding: 0 0 9.5px 0;
+   padding: 0 0 25px 0;
    font-size: 12px;
    letter-spacing: 0.5em;
    text-transform: uppercase;
@@ -439,7 +453,7 @@ a, a:visited{
 .columns__phone{
    position: relative;
    flex: 1 1 auto;
-   padding: 105px 147px 105px 0;
+   padding: 105px 0px 105px 0;
 }
 .columns__mobile img{
    max-width: 100%;
@@ -451,7 +465,7 @@ a, a:visited{
    line-height: 24px;
    position: absolute;
    top: 170px;
-   right: 10px;
+   left: 480px;
    opacity: 5;
 }
 .footer{
@@ -465,12 +479,18 @@ a, a:visited{
    margin: 0px -5px;
    padding: 30px 10px 0px 10px;
 }
-.footer__logo, .footer__nav, .footer__contact, .footer__info{
-   padding: 0px 5px;
-   flex: 0 1 25%;
-}
 .footer__logo{
-   flex: 0 0 25%;
+   flex: 0 1 36%;
+}
+.footer__nav{
+   flex: 0 1 30%;
+}
+.footer__contact{
+   flex: 0 1 33%;
+}
+.footer__info{
+   flex: 0 1 45%;
+   padding: 0px 80px 0px 0px;
 }
 .footer__img{
    background: url("img/logof.svg") center no-repeat;
@@ -493,6 +513,7 @@ a, a:visited{
 .footer__contact{
    line-height: 25px;
    height: 168px;
+   font-weight: normal;
    border-left: 1px solid #fff;
    padding: 0px 0px 0px 32px;
 }
