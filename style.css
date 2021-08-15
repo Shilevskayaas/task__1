@@ -142,13 +142,13 @@ a, a:visited{
    display: flex;
    flex-direction: column;
    justify-content: space-between;
-   padding: 20px 10px 0 5px;
+   padding: 20px 0px 0 0px;
 }
 .header__icons{
    display: flex;
    white-space: nowrap;
    justify-content: space-between;
-   padding: 0 20px 0 0;
+   padding: 0px 40px 0px 0px;
 }
 .header__lk, .header__version{
    font-size: 14px;
@@ -163,13 +163,13 @@ a, a:visited{
    display: block;
    height: 50px;
    background: url("img/lk.svg") left no-repeat;
-   padding: 17px 52px 0px 50px;
+   padding: 17px 70px 0px 40px;
 }
 .header__profile p:hover, .header__profile p:active{
    display: block;
    height: 50px;
    background: url("img/lkh.svg") left no-repeat;
-   padding: 17px 52px 0px 50px;
+   padding: 17px 70px 0px 40px;
 }
 .header__blind{
    border-right: 1px solid #11305D;
@@ -179,13 +179,13 @@ a, a:visited{
    display: block;
    height: 50px;
    background: url("img/version.svg") left no-repeat;
-   padding: 17px 52px 0px 50px;
+   padding: 10px 70px 0px 40px;
 }
 .header__blind p:hover, .header__blind p:active{
    display: block;
    height: 50px;
    background: url("img/versionh.svg") left no-repeat;
-   padding: 17px 52px 0px 50px;
+   padding: 10px 70px 0px 40px;
 }
 .header__phone{
    font-family: "PF Din Text Comp Pro";
@@ -214,13 +214,13 @@ a, a:visited{
    display: block;
    height: 50px;
    background: url("img/app.svg") right no-repeat;
-   padding: 17px 52px 0px 50px;
+   padding: 17px 40px 0px 50px;
 }
 .header__name p:hover, .header__name p:active{
    display: block;
    height: 50px;
    background: url("img/apph.svg") right no-repeat;
-   padding: 17px 52px 0px 50px;
+   padding: 17px 40px 0px 50px;
 }
 .header__nav{
    color: #11305D;
@@ -236,7 +236,7 @@ a, a:visited{
    
 }
 .header__list li{
-   padding: 0px 44px 0px 0px;  
+   padding: 0px 50px 0px 0px;  
    white-space: nowrap; 
    line-height: 5;
 } 
@@ -332,6 +332,7 @@ a, a:visited{
    line-height: 33px;
    letter-spacing: 0.05em;
    text-transform: uppercase;
+   padding: 10px;
 }
 .columns__group{
    width: 850px;
@@ -374,6 +375,7 @@ a, a:visited{
    flex-direction: column;
    justify-content: space-between;
    padding: 0px 32px;
+   width: 50%;
 }
 .columns__we{
    width: 372px;
@@ -382,7 +384,7 @@ a, a:visited{
    justify-content: space-between;
 }
 .columns__picture{
-   width: 604px;
+   max-width: 100%;
    height: 467px;
 }
 .columns__subtitle{
@@ -440,7 +442,7 @@ a, a:visited{
    padding: 105px 147px 105px 0;
 }
 .columns__mobile img{
-   width: 566px;
+   max-width: 100%;
    height: 425px;
 }
 .columns__professional{
@@ -468,7 +470,7 @@ a, a:visited{
    flex: 0 1 25%;
 }
 .footer__logo{
-   flex: 0 0 316px;
+   flex: 0 0 25%;
 }
 .footer__img{
    background: url("img/logof.svg") center no-repeat;
@@ -546,9 +548,12 @@ a, a:visited{
    border-bottom: 2px solid #fff;
 }
 .footer__copy{
-   padding: 0 33px 10px 0;
+   font-family: "ALS Hauss";
+   padding: 0 53px 15px 0;
    text-align: right;
    font-size: 10px;
+   font-weight: normal;
    letter-spacing: 0.1em;
+   line-height: 22px;
    text-transform: uppercase;
 }
