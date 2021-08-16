@@ -261,7 +261,6 @@ a, a:visited{
 }
 .header__list li a{
    display: block;
-   padding: 10px 0px;
    color: #11305D;
    text-decoration: none;
 }
@@ -271,12 +270,10 @@ a, a:visited{
 }
 .header__toggle{  
    color: #11305D;
-   padding: 10px 15px;
    cursor: pointer;
    display: none;
    width: 25px;
    height: 25px;
-   cursor: pointer;
 }
 
 @media( max-width: 768px){
@@ -322,8 +319,8 @@ a, a:visited{
    cursor: pointer;
 }
 .header__burger {
-   width: 40px;
-   height: 4px;
+   width: 32px;
+   height: 2px;
    transform: translate(-50%, -50%);
    background: #11305D;
    transition: 0.5s;
@@ -333,17 +330,17 @@ a, a:visited{
 .header__burger:before,
 .header__burger:after {
    content: "";
-   width: 40px;
-   height: 4px;
+   width: 32px;
+   height: 2px;
    position: absolute;
    background: #11305D;
    transition: 0.5s;
 }
 .header__burger:before {
-   top: -16px;
+   top: -12px;
 }
 .header__burger:after {
-   top: 16px;
+   top: 12px;
 }
 .header__toggle_icon.active .header__burger {
    background: rgba(0, 0, 0, 0);
@@ -375,7 +372,7 @@ a, a:visited{
 }
 .columns__icons{
    flex: 0 1 25%;
-   padding: 35px 0px 0px 0px;
+   padding: 15px 0px 0px 0px;
 }
 .columns__about{
    font-size: 24px;
