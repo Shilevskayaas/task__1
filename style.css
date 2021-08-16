@@ -197,6 +197,7 @@ a, a:visited{
 .header__mail{
    font-size: 22px;
    font-weight: normal;
+   padding: 0px 0px 5px 0px;
 }
 .header__mail:hover, .header__mail:active{
    padding-bottom: 3px;
@@ -251,6 +252,120 @@ a, a:visited{
 .header__list li:hover:after, .header__list li:focus:after{
    width: 100%;
 }
+/*Меню-бургер*/
+
+.header__list li{
+   display: inline-block;
+}
+
+.header__list li a{
+   display: block;
+   padding: 10px 15px;
+   color: #11305D;
+   text-decoration: none;
+}
+
+.header__menu{
+   max-width: 1240px;
+   margin: 0px auto; 
+}
+
+.header__toggle{  
+   color: #11305D;
+   padding: 10px 15px;
+   cursor: pointer;
+   display: none;
+   width: 25px;
+   height: 25px;
+   cursor: pointer;
+}
+
+@media( max-width: 768px){
+   .header{
+      min-height: 114px;
+   }
+   .header__icons{
+      display: none;
+   }
+   .header__img{
+      background: url("img/logohm.svg") 2px/90px no-repeat;
+      width: 92.17px;
+      height: 80px;
+      padding: 0px;
+   }
+   .header__menu, .header__bar, .header__nav{
+      width: 30%;
+   }
+   .header__row{
+      flex-direction: row-reverse;
+   }
+   .header__toggle{
+      display: block;
+      padding: 0;
+   }
+   .header__list{
+      display: none;
+      position: absolute;
+      top: 115px;
+      background: #fff;
+      width: 150%;
+      margin-left: -90px;
+      text-align: center;
+   }
+   .header__list li{
+      display: block;
+   }
+}
+
+.header__toggle_icon {
+   width: 25px;
+   height: 25px;
+   cursor: pointer;
+}
+
+.header__burger {
+   width: 40px;
+   height: 4px;
+   transform: translate(-50%, -50%);
+   background: #11305D;
+   transition: 0.5s;
+   display: inline-block;
+   margin-left: 12px;
+}
+
+.header__burger:before,
+.header__burger:after {
+   content: "";
+   width: 40px;
+   height: 4px;
+   position: absolute;
+   background: #11305D;
+   transition: 0.5s;
+}
+
+.header__burger:before {
+   top: -16px;
+}
+
+.header__burger:after {
+   top: 16px;
+}
+
+.header__toggle_icon.active .header__burger {
+   background: rgba(0, 0, 0, 0);
+}
+
+.header__toggle_icon.active .header__burger:before {
+   top: 0;
+   transform: rotate(45deg);
+}
+
+.header__toggle_icon.active .header__burger:after {
+   top: 0;
+   transform: rotate(135deg);
+}
+
+
 
 .content{
    flex: 1 1 auto;
@@ -468,6 +583,46 @@ a, a:visited{
    left: 480px;
    opacity: 5;
 }
+/*
+@media (max-width: 768px) {
+   .columns__row{
+      display: flex;
+      flex-direction: column;
+      min-height: 1590px;
+   }
+   .columns__about_1, .columns__about_2, .columns__about_3{
+      border: none;
+   }
+   .columns__info{
+      min-height: 722px;
+   }
+   .columns__info h1{
+      font-size: 23px;
+   }   
+   .columns__info p{
+      font-size: 18px;
+   }  
+   .columns__group{
+      display: flex;
+      flex-direction: column;
+      padding: 0px;
+      margin: 0px;
+   }
+   .columns__text{
+      min-height: 2800px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   .columns__download{
+      min-height: 1200px;
+   }
+   .columns__download p{
+      display: none;
+   }
+   
+}*/
+
 .footer{
    background-color: #11305D;
    color: #fff;
@@ -578,3 +733,40 @@ a, a:visited{
    line-height: 22px;
    text-transform: uppercase;
 }
+/*
+@media (max-width: 768px) {
+   .footer{
+      min-height: 500px;
+   }
+   .footer__nav, .footer__info{
+      display: none
+   }
+   .footer__contact{
+      border: none;
+   }
+   .footer__row{
+      display: flex;
+      flex-direction: column;
+   }
+   .footer__img{
+      background: url("img/logofm.svg") top no-repeat;
+      width: 108.3px;
+      height: 94px;
+      padding: 0px;
+   }
+   .footer__phone{
+      font-size: 22px;
+      padding: 36px 0px 6px 0px;
+   }
+   .footer__mail{
+      padding: 0px 0px 15px 0px;
+   }
+   .footer__social{
+      padding: 0px 0px 20px 0px;
+   }
+   .footer__copy{
+      flex: 1 1 auto;
+      padding: 50px 0px 1px 0px;
+      text-align: center;
+   }
+}*/
