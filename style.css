@@ -504,13 +504,19 @@ a, a:visited{
 }
 .columns__picture_2, .columns__picture_3{
    align-self: flex-end;
+   width: 100%;
+
 }
 .columns__picture_1{
    align-self: flex-start;
+   width: 100%;
+
 }
 .columns__picture img{
-   width: 604px;
+   width: 100%;
    height: 467px;
+   object-fit: cover;
+
 }
 .columns__subtitle{
    font-size: 22px;
