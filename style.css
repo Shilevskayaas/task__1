@@ -107,6 +107,7 @@ h6{
    font-weight: normal;
    font-style: normal;
  }
+
 body{
    font-family: "PF Din Text Comp Pro";
    font-weight: normal;
@@ -252,24 +253,22 @@ a, a:visited{
 .header__list li:hover:after, .header__list li:focus:after{
    width: 100%;
 }
+
 /*Меню-бургер*/
 
 .header__list li{
    display: inline-block;
 }
-
 .header__list li a{
    display: block;
-   padding: 10px 15px;
+   padding: 10px 0px;
    color: #11305D;
    text-decoration: none;
 }
-
 .header__menu{
    max-width: 1240px;
    margin: 0px auto; 
 }
-
 .header__toggle{  
    color: #11305D;
    padding: 10px 15px;
@@ -322,7 +321,6 @@ a, a:visited{
    height: 25px;
    cursor: pointer;
 }
-
 .header__burger {
    width: 40px;
    height: 4px;
@@ -332,7 +330,6 @@ a, a:visited{
    display: inline-block;
    margin-left: 12px;
 }
-
 .header__burger:before,
 .header__burger:after {
    content: "";
@@ -342,30 +339,24 @@ a, a:visited{
    background: #11305D;
    transition: 0.5s;
 }
-
 .header__burger:before {
    top: -16px;
 }
-
 .header__burger:after {
    top: 16px;
 }
-
 .header__toggle_icon.active .header__burger {
    background: rgba(0, 0, 0, 0);
 }
-
 .header__toggle_icon.active .header__burger:before {
    top: 0;
    transform: rotate(45deg);
 }
-
 .header__toggle_icon.active .header__burger:after {
    top: 0;
    transform: rotate(135deg);
 }
-
-
+/*-----------------*/
 
 .content{
    flex: 1 1 auto;
