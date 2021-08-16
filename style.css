@@ -212,13 +212,13 @@ a, a:visited{
 .header__name{
    font-size: 19px;
 }
-.header__name p{
+.header__name{
    display: block;
    height: 50px;
    background: url("img/app.svg") right no-repeat;
    padding: 17px 40px 0px 50px;
 }
-.header__name p:hover, .header__name p:active{
+.header__name:hover, .header__name:active{
    display: block;
    height: 50px;
    background: url("img/apph.svg") right no-repeat;
@@ -280,36 +280,54 @@ a, a:visited{
    .header{
       min-height: 114px;
    }
-   .header__icons{
-      display: none;
-   }
-   .header__img{
-      background: url("img/logohm.svg") 2px/90px no-repeat;
-      width: 92.17px;
-      height: 80px;
-      padding: 0px;
-   }
-   .header__menu, .header__bar, .header__nav{
-      width: 30%;
-   }
    .header__row{
       flex-direction: row-reverse;
+   }
+   .header__logo{
+      margin: 0 auto;
+      padding: 18px 0px 16px 0px;
+   }
+   .header__img{
+      background: url("img/logohm.svg") 50% no-repeat;
+      width: 108.3px;
+      height: 94px;
+      padding: 0;
+      margin-right: 65px;
+   }
+   .header__bar{
+      flex: 0 0 65px;
+      flex-direction: row-reverse;
+      padding: 0;
+   }
+   .header__lk, .header__version, .header__contacts, .header__p{
+      display: none;
+   }
+   .header__app{
+      border: none;
+   }
+   .header__name{
+      position: absolute;
+      top: 18px;
+      right: 21px;
    }
    .header__toggle{
       display: block;
       padding: 0;
+      position: absolute;
+      top: 23px;
+      left: 20px;
    }
    .header__list{
       display: none;
       position: absolute;
-      top: 115px;
+      top: 145px;
       background: #fff;
-      width: 150%;
-      margin-left: -90px;
+      width: 100%;
       text-align: center;
    }
    .header__list li{
       display: block;
+      padding: 0;
    }
 }
 
@@ -337,10 +355,10 @@ a, a:visited{
    transition: 0.5s;
 }
 .header__burger:before {
-   top: -12px;
+   top: -7px;
 }
 .header__burger:after {
-   top: 12px;
+   top: 7px;
 }
 .header__toggle_icon.active .header__burger {
    background: rgba(0, 0, 0, 0);
@@ -584,16 +602,40 @@ a, a:visited{
 }
 
 @media (max-width: 768px) {
+   .content:before{
+      max-width: 90%;
+      margin: 0 auto;
+   }
    .container{
       min-width: 320px;
    }
    .columns__row{
       display: flex;
       flex-direction: column;
-      min-height: 1590px;
+      height: 100%;
+   }
+   .columns__icons_2:before, .columns__icons_3:before, .columns__icons_4:before{
+      content: "";
+      display: block;
+      max-width: 90%;
+      height: 1px;
+      margin: 0 auto;
+      background-color: #11305D;
+   }
+   .columns__icons{
+      flex: 0;
+      padding: 0px 0px 30px 0px;
+   }
+   .columns__about{
+      height: 100%;
    }
    .columns__about_1, .columns__about_2, .columns__about_3{
       border: none;
+   }
+   .columns__about p{
+      font-size: 18px;
+      line-height: 25px;
+      padding: 155px 0px 0px 0px;
    }
    .columns__information{
       width: 100%;
@@ -602,7 +644,7 @@ a, a:visited{
       height: 100%;
       line-height: 31px;
       letter-spacing: 0.05em;
-      padding: 38px 0px 20px 0px;
+      padding: 38px 0px 0px 0px;
    }
    .columns__content{
       font-size: 18px;
@@ -632,13 +674,52 @@ a, a:visited{
       justify-content: flex-start;
       padding: 0;
    }
+   .columns__movie{
+      height: 362px;
+   }
+   .columns__title{
+      height: 118px;
+      padding: 0;
+      display: flex;
+      align-items: center;
+   }
    .columns__title p{
       max-width: 272px;
       font-size: 18px;
       font-weight: normal;
       line-height: 25px;
       letter-spacing: 0.05em;
+      
    }
+   .columns__application{
+      padding: 0;
+   }
+   .columns__professional{
+      display: none;
+   }
+   .columns__load{
+   flex: 0;
+   padding: 0;
+   }
+   .columns__phone{
+      padding: 0;
+   }
+   .columns__mobile{
+      filter: none;
+   }
+   .columns__mobile{
+      width: 566px;
+      height: 425px;
+   }
+   .columns__mobile img{
+      height: 425px;
+   }
+   .columns__for{
+      width: 251px;
+      font-size: 18px;
+      line-height: 25px;
+   }
+
    .columns__company{
       width: 100%;
       justify-content: flex-start;
@@ -661,16 +742,6 @@ a, a:visited{
    .columns__we_2{
       order: 6;
    }
-   .columns__application{
-      object-fit: cover;
-   }
-   .columns__download{
-      min-height: 1200px;
-   }
-   .columns__download p{
-      display: none;
-   }
-   
 }
 
 .footer{
