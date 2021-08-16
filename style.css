@@ -329,6 +329,18 @@ a, a:visited{
       display: block;
       padding: 0;
    }
+   .header__list li:after{
+      display: block;
+      content: "";
+      height: 5px;
+      width: 0%;
+      background-color: #11305D;
+      transition: width 0.3s ease-in-out;
+   }
+   .header__list li:hover:after, .header__list li:focus:after{
+      width: 25%;
+      margin: 0 auto;
+   }
 }
 
 .header__toggle_icon {
@@ -673,6 +685,18 @@ a, a:visited{
       align-items: center;
       justify-content: flex-start;
       padding: 0;
+   }
+   .columns__we{
+      max-width: 85%;
+      padding: 23px 0px 40px 0px;
+   }
+   .columns__subtitle{
+      font-size: 18px;
+      line-height: 24px;
+   }
+   .columns__book{
+      font-size: 12px;
+      line-height: 19px;
    }
    .columns__movie{
       height: 362px;
