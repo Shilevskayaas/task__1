@@ -599,19 +599,30 @@ a, a:visited{
       width: 100%;
    }
    .columns__info{
-      min-height: 722px;
+      height: 100%;
+      line-height: 31px;
+      letter-spacing: 0.05em;
+      padding: 38px 0px 20px 0px;
+   }
+   .columns__content{
+      font-size: 18px;
    }
    .columns__info h1{
       font-size: 23px;
+      padding: 0;
    }   
    .columns__info p{
       font-size: 18px;
+      line-height: 25px;
+      letter-spacing: 0.05em;
+      padding: 20px 0px 0px 0px;
+      height: 100%;
    }  
    .columns__group{
       display: flex;
       flex-direction: column;
-      padding: 0px;
       margin: 0px;
+      padding: 43px 0px 43px 0px;
    }
    .columns__text{
       height: 100%;
