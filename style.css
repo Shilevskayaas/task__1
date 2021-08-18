@@ -567,8 +567,7 @@ a, a:visited{
    margin: 111px 0px 111px 0px;
 }
 .columns__load{
-   padding: 65px 0 0px 32px;
-   
+   padding: 69px 0px 0px 32.5px;
 }
 .columns__for{
    max-width: 454px;
@@ -731,7 +730,15 @@ a, a:visited{
    .columns__application{
       height: 384px;
       padding: 0;
-      margin: 70px 0px 70px 0px;
+
+
+
+      /*margin: 70px 0px 70px 0px;*/
+
+
+
+
+      
    }
    .columns__professional{
       display: none;
@@ -739,20 +746,24 @@ a, a:visited{
    .columns__load{
    flex: 0;
    padding: 0;
+   display: flex;
    flex-direction: column;
    align-items: center;
+   justify-content: flex-start;
    }
    .columns__phone{
-      height: 100%;
       padding: 0;
       position: relative;
+   }
+   .columns__mobile img{
+      filter: none;
    }
    .columns__download{
       
    }
    .columns__download img{
-      width: 125px;
-      height: 81px;
+      max-height: 70%;
+      max-width: 70%;
       padding: 0;
    }
    .columns__download p{
@@ -762,10 +773,11 @@ a, a:visited{
    }
    .columns__mobile{
       background: url("img/telm.jpg") top no-repeat;
-      width: 96px;
-height: 169px;
+      width: 100%;
+      height: 100%;
+      padding: 0;
       position: absolute;
-      bottom: 0px;
+      top: 140px;
       left: -10px;
    }
    .columns__mobile img{
@@ -773,10 +785,9 @@ height: 169px;
    }
    .columns__for{
       width: 251px;
-      height: 75px;
       font-size: 18px;
       line-height: 25px;
-      padding: 0;
+      padding: 65px 0px 40px 20px;
    }
 
    .columns__company{
