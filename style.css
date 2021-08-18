@@ -337,7 +337,7 @@ a, a:visited{
       background-color: #11305D;
       transition: width 0.3s ease-in-out;
    }
-   .header__list li:hover:after, .header__list li:focus:after{
+   .header__list li:hover:after, .header__list li:active:after, .header__list li:focus:after{
       width: 25%;
       margin: 0 auto;
    }
@@ -448,7 +448,7 @@ a, a:visited{
    color: #fff;
    font-weight: normal;
    text-align: center;
-   padding: 30px;
+   padding: 46px 0px 46px 0px;
    text-transform: uppercase;
 }
 .columns__info h1{
@@ -498,14 +498,10 @@ a, a:visited{
    font-family: "ALS Hauss";
    font-weight: normal;
 }
-
-
-
-
 .columns__text{
    display:flex;
    flex-wrap:wrap;
-   padding: 0px 0px 111px 0px;   
+   margin: 111px 0px 111px 0px;   
 }
 .columns__company{
    flex: 0 1 100%;
@@ -517,29 +513,24 @@ a, a:visited{
    height: 100%;
 }
 .columns__company_1{
-   padding: 177px 0px 0px 0px;   
-}
-.columns__company_2{
-   justify-content: flex-start;
+   padding: 66px 0px 0px 0px;   
 }
 .columns__we_1{
    padding: 0px 0px 140px 100px;
    width: 472px;
 }
 .columns__we_2{
-   padding: 0px 0px 0px 133px;  
+   padding: 0px 133px 0px 0px;  
    width: 505px;
 }
 .columns__we_3{
    padding: 50px 0px 0px 100px;
    width: 472px;
 }
-.columns__picture{}
 .columns__picture img{
    width: 604px;
    height: 467px;
    object-fit: cover;
-
 }
 .columns__subtitle{
    font-size: 22px;
@@ -552,11 +543,6 @@ a, a:visited{
    line-height: 24px;
    
 }
-
-
-
-
-
 .columns__movie{
    height: 467px;
    background-image: url("img/video.jpg");
@@ -576,14 +562,13 @@ a, a:visited{
    margin: 0 auto;
 }
 .columns__application{
-   max-width: 1131px;
-   height: 635px;
    display: flex;
    justify-content: space-between;
+   margin: 111px 0px 111px 0px;
 }
 .columns__load{
-   padding: 175px 0 137px 32px;
-   flex: 0 0 450px;
+   padding: 65px 0 0px 32px;
+   
 }
 .columns__for{
    max-width: 454px;
@@ -603,7 +588,7 @@ a, a:visited{
 .columns__phone{
    position: relative;
    flex: 1 1 auto;
-   padding: 105px 0px 105px 0;
+   height: 100%;
 }
 .columns__mobile{
    width: 566px;
@@ -618,7 +603,7 @@ a, a:visited{
    font-size: 14px;
    line-height: 24px;
    position: absolute;
-   top: 170px;
+   top: 59px;
    left: 480px;
    opacity: 5;
 }
@@ -690,7 +675,7 @@ a, a:visited{
    }
    .columns__text{
       height: 100%;
-      padding: 0px 0px 25px 0px;
+      margin: 0px 0px 70px 0px;
    }
    .columns__company{
       width: 100%;
@@ -705,10 +690,11 @@ a, a:visited{
    .columns__company_3{
       flex-direction: column-reverse;
    }
-   
+   .columns__picture{
+      width: 100%;
+   }
    .columns__picture img{
-      height: 212px;
-      max-width: 100%;
+      width: 100%;
    }
    .columns__we{
       width: 85%;
@@ -722,8 +708,11 @@ a, a:visited{
       font-size: 12px;
       line-height: 19px;
    }
+   .columns__video{
+      width: 100%;
+   }
    .columns__movie img{
-      height: 362px;
+      max-width: 100%;
    }
    .columns__title{
       height: 118px;
@@ -742,6 +731,7 @@ a, a:visited{
    .columns__application{
       height: 384px;
       padding: 0;
+      margin: 70px 0px 70px 0px;
    }
    .columns__professional{
       display: none;
@@ -749,12 +739,11 @@ a, a:visited{
    .columns__load{
    flex: 0;
    padding: 0;
-   display: flex;
    flex-direction: column;
    align-items: center;
-   justify-content: flex-start;
    }
    .columns__phone{
+      height: 100%;
       padding: 0;
       position: relative;
    }
@@ -762,8 +751,8 @@ a, a:visited{
       
    }
    .columns__download img{
-      max-height: 70%;
-      max-width: 70%;
+      width: 125px;
+      height: 81px;
       padding: 0;
    }
    .columns__download p{
@@ -773,11 +762,10 @@ a, a:visited{
    }
    .columns__mobile{
       background: url("img/telm.jpg") top no-repeat;
-      width: 100%;
-      height: 100%;
-      padding: 0;
+      width: 96px;
+height: 169px;
       position: absolute;
-      top: 140px;
+      bottom: 0px;
       left: -10px;
    }
    .columns__mobile img{
@@ -785,9 +773,10 @@ a, a:visited{
    }
    .columns__for{
       width: 251px;
+      height: 75px;
       font-size: 18px;
       line-height: 25px;
-      padding: 65px 0px 40px 20px;
+      padding: 0;
    }
 
    .columns__company{
