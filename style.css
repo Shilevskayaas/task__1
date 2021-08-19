@@ -545,7 +545,7 @@ a, a:visited{
 }
 .columns__movie{
    height: 467px;
-   background-image: url("img/video.jpg");
+   background: url(img/video.jpg) center no-repeat;
 }
 .columns__title{
    background-color: #11305D;
