@@ -92,21 +92,21 @@ h6{
 @font-face{
    font-family: "ALS Hauss";
    src: local("ALS Hauss Bold"), local("ALS-Hauss-Bold"),
-       url("fonts/ALSHauss-Bold.woff2") format("woff2"),
-       url("fonts/ALSHauss-Bold.woff") format("woff"),
-       url("fonts/ALSHauss-Bold.ttf") format("truetype");
+   url("fonts/ALSHauss-Bold.woff2") format("woff2"),
+   url("fonts/ALSHauss-Bold.woff") format("woff"),
+   url("fonts/ALSHauss-Bold.ttf") format("truetype");
    font-weight: bold;
    font-style: normal;
- }
- @font-face{
+}
+@font-face{
    font-family: "ALS Hauss";
    src: local("ALS Hauss Regular"), local("ALS-Hauss-Regular"),
-       url("fonts/ALSHauss-Regular.woff2") format("woff2"),
-       url("fonts/ALSHauss-Regular.woff") format("woff"),
-       url("fonts/ALSHauss-Regular.ttf") format("truetype");
+   url("fonts/ALSHauss-Regular.woff2") format("woff2"),
+   url("fonts/ALSHauss-Regular.woff") format("woff"),
+   url("fonts/ALSHauss-Regular.ttf") format("truetype");
    font-weight: normal;
    font-style: normal;
- }
+}
 
 body{
    font-family: "PF Din Text Comp Pro";
@@ -456,7 +456,6 @@ a, a:visited{
    font-size: 35px;
    letter-spacing: 0.05em;
    text-transform: uppercase;
-
 }
 .columns__info p{
    margin: 0 auto;
@@ -507,29 +506,37 @@ a, a:visited{
    flex: 0 1 100%;
    display: flex;
    justify-content: space-between;
-   align-items: center;
-   margin: -66px 0px 0px 0px;
+   margin: -5vw 0px 0px 0px;
    width: 100%;
    height: 100%;
 }
 .columns__company_1{
    padding: 66px 0px 0px 0px;   
 }
-.columns__we_1{
-   padding: 0px 0px 140px 100px;
-   width: 472px;
+.columns__description {
+   width: 48vw;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.columns__we_1 {
+   max-width: 400px;
+   margin-top: -100px;
 }
 .columns__we_2{
-   padding: 0px 133px 0px 0px;  
-   width: 505px;
+   padding: 0px 10vw 0px 0px;
+   max-width: 505px;
 }
 .columns__we_3{
-   padding: 50px 0px 0px 100px;
+   padding: 50px 0px 0px 3vw;
    width: 472px;
 }
-.columns__picture img{
-   width: 604px;
-   height: 467px;
+.columns__picture {
+   width: 48vw;
+}
+.columns__picture img {
+   width: 100%;
+   height: 40vw;
    object-fit: cover;
 }
 .columns__subtitle{
@@ -698,8 +705,15 @@ a, a:visited{
    }
    .columns__picture img{
       width: 100%;
+      min-height: 250px;
    }
+
+   .columns__description {
+      width: 100%;
+   }
+
    .columns__we{
+      margin: unset;
       width: 85%;
       padding: 23px 0px 40px 0px;
    }
@@ -783,7 +797,6 @@ a, a:visited{
       line-height: 25px;
       padding: 0;
    }
-
    .columns__company{
       width: 100%;
       justify-content: flex-start;
