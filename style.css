@@ -519,7 +519,7 @@ a, a:visited{
    height: 100%;
 }
 .columns__company_1{
-   padding: 41px 0px 0px 0px;  
+   padding: 66px 0px 0px 0px;   
 }
 .columns__description {
    width: 48vw;
@@ -530,14 +530,13 @@ a, a:visited{
 .columns__we_1 {
    max-width: 400px;
    margin-top: -100px;
-   padding: 50px 7vw 0px 3vw;
 }
 .columns__we_2{
-   padding: 0px 7vw 0px 3vw;
+   padding: 0px 10vw 0px 0px;
    max-width: 505px;
 }
 .columns__we_3{
-   padding: 50px 7vw 0px 3vw;
+   padding: 50px 0px 0px 3vw;
    width: 472px;
 }
 .columns__picture {
@@ -557,6 +556,7 @@ a, a:visited{
 .columns__book{
    font-size: 14px;
    line-height: 24px;
+   
 }
 .columns__video{
    line-height: 0;
