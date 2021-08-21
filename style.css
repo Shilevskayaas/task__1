@@ -130,26 +130,30 @@ a, a:visited{
 }
 .header__row{
    display: flex;
+   padding: 33px 0px 0px 0px;
 }
 .header__logo{
-   flex: 0 0 25%;
+   flex: 0 1 25%;
+   padding: 0% 1% 0% 1%;
 }
 .header__img{
    background: url("img/logo.svg") center no-repeat;
-   padding: 150px 0px 10px 0px;
+   padding: 150px 0px 0px 0px;
 }
 .header__bar{
-   flex: 1 1 auto;
+   flex: 0 1 100%;
    display: flex;
    flex-direction: column;
    justify-content: space-between;
-   padding: 20px 0px 0 0px;
+   padding: 0% 2.5% 0% 0%;
 }
 .header__icons{
+   width: 100%;
+   flex: 0 1 60%;
    display: flex;
    white-space: nowrap;
    justify-content: space-between;
-   padding: 0px 40px 0px 0px;
+   align-items: center;
 }
 .header__lk, .header__version{
    font-size: 14px;
@@ -164,13 +168,13 @@ a, a:visited{
    display: block;
    height: 50px;
    background: url("img/lk.svg") left no-repeat;
-   padding: 17px 70px 0px 40px;
+   padding: 15px 0px 0px 48px;
 }
 .header__profile p:hover, .header__profile p:active{
    display: block;
    height: 50px;
    background: url("img/lkh.svg") left no-repeat;
-   padding: 17px 70px 0px 40px;
+   padding: 15px 0px 0px 48px;
 }
 .header__blind{
    border-right: 1px solid #11305D;
@@ -180,13 +184,13 @@ a, a:visited{
    display: block;
    height: 50px;
    background: url("img/version.svg") left no-repeat;
-   padding: 10px 70px 0px 40px;
+   padding: 10px 0px 0px 37px;
 }
 .header__blind p:hover, .header__blind p:active{
    display: block;
    height: 50px;
    background: url("img/versionh.svg") left no-repeat;
-   padding: 10px 70px 0px 40px;
+   padding: 10px 0px 0px 37px;
 }
 .header__phone{
    font-family: "PF Din Text Comp Pro";
@@ -216,15 +220,16 @@ a, a:visited{
    display: block;
    height: 50px;
    background: url("img/app.svg") right no-repeat;
-   padding: 17px 40px 0px 50px;
+   padding: 15px 30px 0px 0px;
 }
 .header__name:hover, .header__name:active{
    display: block;
    height: 50px;
    background: url("img/apph.svg") right no-repeat;
-   padding: 17px 40px 0px 50px;
+   padding: 15px 30px 0px 0px;
 }
 .header__nav{
+   width: 95%;
    color: #11305D;
 }
 .header__list{
@@ -234,23 +239,21 @@ a, a:visited{
    letter-spacing: 0.1em;
    text-transform: uppercase;
    display: flex;
+   justify-content: space-between; 
    white-space: nowrap;
-   
 }
 .header__list li{
-   padding: 0px 50px 0px 0px;  
-   white-space: nowrap; 
-   line-height: 5;
 } 
 .header__list li:after{
    display: block;
    content: "";
    height: 8px;
+   margin-top: 20px;
    width: 0%;
    background-color: #11305D;
    transition: width 0.1s ease-in-out;
 }
-.header__list li:hover:after, .header__list li:focus:after{
+.header__list li:hover:after, .header__list li:focus:after, .header__list li:active:after{
    width: 100%;
 }
 
@@ -265,8 +268,7 @@ a, a:visited{
    text-decoration: none;
 }
 .header__menu{
-   max-width: 1240px;
-   margin: 0px auto; 
+   width: 100%;
 }
 .header__toggle{  
    color: #11305D;
@@ -275,74 +277,6 @@ a, a:visited{
    width: 25px;
    height: 25px;
 }
-
-@media( max-width: 768px){
-   .header{
-      min-height: 114px;
-   }
-   .header__row{
-      flex-direction: row-reverse;
-   }
-   .header__logo{
-      margin: 0 auto;
-      padding: 18px 0px 16px 0px;
-   }
-   .header__img{
-      background: url("img/logohm.svg") 50% no-repeat;
-      width: 108.3px;
-      height: 94px;
-      padding: 0;
-      margin-right: 65px;
-   }
-   .header__bar{
-      flex: 0 0 65px;
-      flex-direction: row-reverse;
-      padding: 0;
-   }
-   .header__lk, .header__version, .header__contacts, .header__p{
-      display: none;
-   }
-   .header__app{
-      border: none;
-   }
-   .header__name{
-      position: absolute;
-      top: 18px;
-      right: 21px;
-   }
-   .header__toggle{
-      display: block;
-      padding: 0;
-      position: absolute;
-      top: 23px;
-      left: 20px;
-   }
-   .header__list{
-      display: none;
-      position: absolute;
-      top: 145px;
-      background: #fff;
-      width: 100%;
-      text-align: center;
-   }
-   .header__list li{
-      display: block;
-      padding: 0;
-   }
-   .header__list li:after{
-      display: block;
-      content: "";
-      height: 5px;
-      width: 0%;
-      background-color: #11305D;
-      transition: width 0.3s ease-in-out;
-   }
-   .header__list li:hover:after, .header__list li:active:after, .header__list li:focus:after{
-      width: 25%;
-      margin: 0 auto;
-   }
-}
-
 .header__toggle_icon {
    width: 25px;
    height: 25px;
@@ -372,6 +306,77 @@ a, a:visited{
 .header__burger:after {
    top: 7px;
 }
+
+@media( max-width: 768px){
+   .header{
+      min-height: 114px;
+   }
+   .header__row{
+      flex-direction: row-reverse;
+      padding: 0;
+   }
+   .header__logo{
+      margin: 0 auto;
+      padding: 18px 0px 16px 0px;
+   }
+   .header__img{
+      background: url("img/logohm.svg") 50% no-repeat;
+      width: 108.3px;
+      height: 94px;
+      padding: 0;
+      margin-right: 65px;
+   }
+   .header__bar{
+      flex: 0 0 65px;
+      flex-direction: row-reverse;
+   }
+   .header__lk, .header__version, .header__contacts, .header__p{
+      display: none;
+   }
+   .header__app{
+      border: none;
+   }
+   .header__name{
+      position: absolute;
+      top: 18px;
+      right: 21px;
+   }
+   .header__toggle{
+      display: block;
+      padding: 0;
+      position: absolute;
+      top: 23px;
+      left: 20px;
+   }
+   .header__list{
+      display: none;
+      position: absolute;
+      top: 170px;
+      background: #fff;
+      width: 100%;
+      height: 400px;
+      text-align: center;
+   }
+   .header__list li{
+      display: block;
+      line-height: 19px;
+      padding: 0px 0px 14px 0px;
+   }
+   .header__list li:after{
+      display: block;
+      content: "";
+      height: 4px;
+      margin: 0 auto;
+      margin-top: 15px;
+      width: 0%;
+      background-color: #11305D;
+      transition: width 0.1s ease-in-out;
+   }
+   .header__list li:hover:after, .header__list li:focus:after, .header__list li:active:after{
+      width: 25%;
+   }
+}
+
 .header__toggle_icon.active .header__burger {
    background: rgba(0, 0, 0, 0);
 }
@@ -840,7 +845,7 @@ a, a:visited{
 }
 .footer__info{
    flex: 0 1 45%;
-   padding: 0px 80px 0px 0px;
+   padding: 0px 40px 0px 10px;
 }
 .footer__img{
    background: url("img/logof.svg") center no-repeat;
