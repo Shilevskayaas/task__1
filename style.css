@@ -133,7 +133,7 @@ a, a:visited{
    padding: 33px 0px 0px 0px;
 }
 .header__logo{
-   flex: 0 1 25%;
+   flex: 0 1 23%;
    padding: 0% 1% 0% 1%;
 }
 .header__img{
@@ -141,7 +141,7 @@ a, a:visited{
    padding: 150px 0px 0px 0px;
 }
 .header__bar{
-   flex: 0 1 100%;
+   flex: 0 1 75%;
    display: flex;
    flex-direction: column;
    justify-content: space-between;
@@ -163,6 +163,7 @@ a, a:visited{
 .header__lk{
    border-right: 1px solid #11305D;
    height: 52px;  
+   padding: 0vw 5vw 0vw 0vw;
 }
 .header__profile p{
    display: block;
@@ -179,6 +180,7 @@ a, a:visited{
 .header__blind{
    border-right: 1px solid #11305D;
    height: 52px;  
+   padding: 0vw 5vw 0vw 0vw;
 }
 .header__blind p{
    display: block;
@@ -212,6 +214,7 @@ a, a:visited{
 .header__app{
    border-left: 1px solid #11305D;
    height: 52px;  
+   padding: 0vw 0vw 0vw 5vw;
 }
 .header__name{
    font-size: 19px;
@@ -527,14 +530,14 @@ a, a:visited{
 .columns__we_1 {
    max-width: 400px;
    margin-top: -100px;
-   padding: 50px 0px 0px 3vw;
+   padding: 50px 7vw 0px 3vw;
 }
 .columns__we_2{
-   padding: 0px 10vw 0px 0px;
+   padding: 0px 7vw 0px 3vw;
    max-width: 505px;
 }
 .columns__we_3{
-   padding: 50px 0px 0px 3vw;
+   padding: 50px 7vw 0px 3vw;
    width: 472px;
 }
 .columns__picture {
