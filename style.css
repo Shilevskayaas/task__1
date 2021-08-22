@@ -709,6 +709,7 @@ a, a:visited{
       font-size: 18px;
       line-height: 25px;
       padding: 110px 0px 0px 0px;
+      white-space: nowrap;
    }
    .columns__information{
       width: 100%;
@@ -862,7 +863,7 @@ a, a:visited{
       justify-content: flex-start;
    }
 }
-@media (max-width: 1030px){
+@media (max-width: 1110px){
    .columns__about p{
       font-size: 20px;
    }
@@ -871,6 +872,9 @@ a, a:visited{
    }
 }
 @media (max-width: 960px){
+   .columns__about p{
+      font-size: 15px;
+   }
    .columns__for{
       font-size: 28px;
    }
@@ -886,12 +890,12 @@ a, a:visited{
       font-size: 24px;
    }
    .columns__about p{
-      font-size: 18px;
+      font-size: 16px;
    }
 }
 @media (max-width: 800px){
    .columns__about p{
-      font-size: 16px;
+      font-size: 14px;
    }
 }
 @media (max-width: 320px){
