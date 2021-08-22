@@ -248,7 +248,7 @@ a, a:visited{
 .header__list li{
    height: 41.6px;
 } 
-.header__list li:after, .active:after{
+.header__list_hover:after, .header__list_active:after{
    display: block;
    content: "";
    height: 8px;
@@ -257,8 +257,9 @@ a, a:visited{
    background-color: #11305D;
    transition: width 0.1s ease-in-out;
 }
-.header__list li:hover:after, .header__list li:focus:after, .header__list li:active:after, .active:after{
-   width: 100%;
+.header__list_hover:hover:after, .header__list_hover:focus:after, .header__list_hover:active:after, .header__list_active:after{
+   width: 160%;
+   margin-left: -30%;
 }
 
 /*Меню-бургер*/
