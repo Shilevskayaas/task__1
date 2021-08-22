@@ -153,14 +153,16 @@ a, a:visited{
    justify-content: space-between;
    align-items: center;
 }
+.header__line{
+   width: 10px;
+   height: 52px;
+   background-color: #11305D;
+   background: url("img/line.svg") center no-repeat;
+}
 .header__lk, .header__version{
    font-size: 14px;
    letter-spacing: 0.05em;
    text-transform: uppercase;   
-}
-.header__lk{
-   border-right: 1px solid #11305D;
-   height: 52px;  
 }
 .header__profile p{
    display: block;
@@ -173,10 +175,6 @@ a, a:visited{
    height: 50px;
    background: url("img/lkh.svg") left no-repeat;
    padding: 15px 0px 0px 48px;
-}
-.header__blind{
-   border-right: 1px solid #11305D;
-   height: 52px;  
 }
 .header__blind p{
    display: block;
@@ -206,10 +204,6 @@ a, a:visited{
    padding-bottom: 3px;
    width: 105px;
    border-bottom: 2px solid #11305D;;
-}
-.header__app{
-   border-left: 1px solid #11305D;
-   height: 52px;
 }
 .header__name{
    font-size: 19px;
