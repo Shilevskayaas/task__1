@@ -407,14 +407,22 @@ a, a:visited{
 }
 .columns__row{
    display: flex;
+   align-items: center;
    text-transform: uppercase;
    height: 374px;
 }
 .columns__icons{
    flex: 0 1 25%;
-   padding: 30px 0px 0px 0px;
+}
+.columns__line{
+   width: 10px;
+   height: 308px;
+   background-color: #11305D;
+   background: url("img/cline.svg") center no-repeat;
 }
 .columns__about{
+   height: 100%;
+   margin: 69px 0px 69px 0px;
    font-size: 24px;
    line-height: 33px;
    text-align: center;
@@ -423,8 +431,9 @@ a, a:visited{
 }
 .columns__about p{
    display: block;
-   padding: 180px 0px 0px 0px;
+   padding: 153px 0px 0px 0px;
 }
+
 .columns__about_1{
    background: url("img/01.svg") top/auto no-repeat;
 }
@@ -448,10 +457,6 @@ a, a:visited{
 }
 .columns__about_4:hover, .columns__about_4:active{
    background: url("img/04h.svg") top/auto no-repeat;
-}
-.columns__about_1, .columns__about_2, .columns__about_3{
-   height: 308px;
-   border-right: 1px solid #11305D;
 }
 .columns__info{
    background-color: #11305D;
@@ -648,6 +653,9 @@ a, a:visited{
    }
    .columns__icons{
       padding: 0;
+   }
+   .columns__line{
+      display: none;
    }
    .columns__icons_2:before, .columns__icons_3:before, .columns__icons_4:before{
       content: "";
