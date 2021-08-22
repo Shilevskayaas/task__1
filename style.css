@@ -660,7 +660,7 @@ a, a:visited{
    .columns__icons_2:before, .columns__icons_3:before, .columns__icons_4:before{
       content: "";
       display: block;
-      width: 87.5vw;
+      width: 90vw;
       height: 1px;
       margin: 0 auto;
       background-color: #11305D;
@@ -672,6 +672,9 @@ a, a:visited{
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+   }
+   .columns__about:hover, .columns__about:active{
+      background-size: auto 92px;
    }
    .columns__about_1, .columns__about_2, .columns__about_3{
       border: none;
@@ -743,6 +746,9 @@ a, a:visited{
       margin: unset;
       width: 85%;
       padding: 23px 0px 40px 0px;
+   }
+   .columns__we_2{
+      max-width: 85%;
    }
    .columns__subtitle{
       font-size: 18px;
