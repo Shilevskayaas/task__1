@@ -660,7 +660,7 @@ a, a:visited{
    .columns__icons_2:before, .columns__icons_3:before, .columns__icons_4:before{
       content: "";
       display: block;
-      max-width: 90%;
+      width: 87.5vw;
       height: 1px;
       margin: 0 auto;
       background-color: #11305D;
