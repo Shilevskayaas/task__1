@@ -1032,10 +1032,10 @@ a, a:visited{
    .footer__row{
       display: flex;
       flex-direction: column;
-      padding: 0;
+      padding: 44px 0px 0px 0px;
    }
    .footer__logo{
-      padding: 44px 0px 0px 0px;
+      
    }
    .footer__img{
       background: url("img/logofm.svg") top no-repeat;
