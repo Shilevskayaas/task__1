@@ -144,7 +144,7 @@ a, a:visited{
    display: flex;
    flex-direction: column;
    justify-content: space-between;
-   padding: 03px 0px 0px 15px;
+   padding: 0px 0px 0px 15px;
 }
 .header__icons{
    width: 100%;
@@ -829,7 +829,6 @@ a, a:visited{
       right: 0px;
    }
 }
-
 
 .footer{
    background-color: #11305D;
