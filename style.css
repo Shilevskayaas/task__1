@@ -324,6 +324,9 @@ a, a:visited{
       flex: 0 0 65px;
       flex-direction: row-reverse;
    }
+   .header__line{
+      display: none;
+   }
    .header__lk, .header__version, .header__contacts, .header__p{
       display: none;
    }
@@ -346,6 +349,7 @@ a, a:visited{
       display: none;
       position: absolute;
       top: 170px;
+      left: 0;
       background: #fff;
       width: 100%;
       height: 400px;
@@ -422,28 +426,28 @@ a, a:visited{
    padding: 180px 0px 0px 0px;
 }
 .columns__about_1{
-   background: url("img/01.svg") 50% 44px/auto no-repeat;
+   background: url("img/01.svg") top/auto no-repeat;
 }
 .columns__about_1:hover, .columns__about_1:active{
-   background: url("img/01h.svg") 50% 44px/auto no-repeat;
+   background: url("img/01h.svg") top/auto no-repeat;
 }
 .columns__about_2{
-   background: url("img/02.svg") 50% 44px/auto no-repeat;
+   background: url("img/02.svg") top/auto no-repeat;
 }
 .columns__about_2:hover, .columns__about_2:active{
-   background: url("img/02h.svg") 50% 44px/auto no-repeat;
+   background: url("img/02h.svg") top/auto no-repeat;
 }
 .columns__about_3{
-   background: url("img/03.svg") 50% 44px/auto no-repeat;
+   background: url("img/03.svg") top/auto no-repeat;
 }
 .columns__about_3:hover, .columns__about_3:active{
-   background: url("img/03h.svg") 50% 44px/auto no-repeat;
+   background: url("img/03h.svg") top/auto no-repeat;
 }
 .columns__about_4{
-   background: url("img/04.svg") 50% 44px/auto no-repeat;
+   background: url("img/04.svg") top/auto no-repeat;
 }
 .columns__about_4:hover, .columns__about_4:active{
-   background: url("img/04h.svg") 50% 44px/auto no-repeat;
+   background: url("img/04h.svg") top/auto no-repeat;
 }
 .columns__about_1, .columns__about_2, .columns__about_3{
    height: 308px;
@@ -642,6 +646,9 @@ a, a:visited{
       flex-direction: column;
       height: 100%;
    }
+   .columns__icons{
+      padding: 0;
+   }
    .columns__icons_2:before, .columns__icons_3:before, .columns__icons_4:before{
       content: "";
       display: block;
@@ -650,12 +657,13 @@ a, a:visited{
       margin: 0 auto;
       background-color: #11305D;
    }
-   .columns__icons{
-      flex: 0;
-      padding: 0px 0px 30px 0px;
-   }
    .columns__about{
       height: 100%;
+      background-size: auto 92px;
+      margin: 44px 0px 30px 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
    }
    .columns__about_1, .columns__about_2, .columns__about_3{
       border: none;
@@ -663,7 +671,7 @@ a, a:visited{
    .columns__about p{
       font-size: 18px;
       line-height: 25px;
-      padding: 155px 0px 0px 0px;
+      padding: 110px 0px 0px 0px;
    }
    .columns__information{
       width: 100%;
