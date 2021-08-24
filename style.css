@@ -121,6 +121,7 @@ body{
 }
 .container{
    margin: 0px auto;
+   max-width: 1400px;
 }
 .header__text, .header__info, .header__list{
    text-transform: uppercase;
