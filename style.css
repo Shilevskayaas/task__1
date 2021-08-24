@@ -143,7 +143,7 @@ a, a:visited{
    display: flex;
    flex-direction: column;
    justify-content: space-between;
-   padding: 33px 32px 2px 32px;
+   padding: 40px 32px 2px 32px;
 }
 .header__icons{
    width: 100%;
@@ -389,8 +389,6 @@ a, a:visited{
 @media (max-width: 960px){
    .header__logo{
       flex: 0 1 auto;
-   }
-   .header__img{
       background: url("img/logohm.svg") center/auto no-repeat;
       width: 108.3px;
       height: 94px;
@@ -409,7 +407,6 @@ a, a:visited{
       letter-spacing: 0em;
    }
 }
-
 .header__toggle_icon.active .header__burger {
    background: rgba(0, 0, 0, 0);
 }
@@ -487,6 +484,7 @@ a, a:visited{
    background: url("img/04h.svg") top/auto no-repeat;
 }
 .columns__info{
+   height: 515px;
    background-color: #11305D;
    color: #fff;
    font-weight: normal;
@@ -513,6 +511,7 @@ a, a:visited{
 .columns__group{
    margin: 0 auto;
    display: flex;
+   padding: 30px 0px 0px 0px;
 }
 .columns__information{
    flex: 0 1 33.333%;
