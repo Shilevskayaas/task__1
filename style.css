@@ -205,11 +205,12 @@ a, a:visited{
    font-size: 22px;
    font-weight: normal;
    line-height: 28px;
+   padding: 0px 0px 5px 0px;
 }
 .header__mail:hover, .header__mail:active{
-   padding-bottom: 3px;
    width: 105px;
-   border-bottom: 2px solid #11305D;;
+   border-bottom: 2px solid #11305D;
+   padding-bottom: 3px;
 }
 .header__name{
    display: flex;
@@ -224,7 +225,7 @@ a, a:visited{
    align-items: center;
    height: 50px;
    background: url(img/apph.svg) right no-repeat;
-   padding: 0px 46px 0px 0px;
+   padding: 0px 42px 0px 0px;
 }
 .header__nav{
    width: 88%;
