@@ -475,24 +475,28 @@ a, a:visited{
 }
 .columns__about_1:hover, .columns__about_1:active{
    background: url("img/01h.svg") top/auto no-repeat;
+   
 }
 .columns__about_2{
    background: url("img/02.svg") top/auto no-repeat;
 }
 .columns__about_2:hover, .columns__about_2:active{
    background: url("img/02h.svg") top/auto no-repeat;
+   
 }
 .columns__about_3{
    background: url("img/03.svg") top/auto no-repeat;
 }
 .columns__about_3:hover, .columns__about_3:active{
    background: url("img/03h.svg") top/auto no-repeat;
+   
 }
 .columns__about_4{
    background: url("img/04.svg") top/auto no-repeat;
 }
 .columns__about_4:hover, .columns__about_4:active{
    background: url("img/04h.svg") top/auto no-repeat;
+  
 }
 .columns__info{
    margin: 0 auto;
@@ -818,7 +822,8 @@ a, a:visited{
    }
    .columns__movie video{
       width: 100%;
-      height: 362px;
+      height: auto;
+      object-fit: cover;
    }
    .columns__title{
       height: 118px;
