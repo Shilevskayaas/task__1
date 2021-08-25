@@ -495,6 +495,7 @@ a, a:visited{
    background: url("img/04h.svg") top/auto no-repeat;
 }
 .columns__info{
+   margin: 0 auto;
    height: 515px;
    background-color: #11305D;
    color: #fff;
@@ -504,12 +505,15 @@ a, a:visited{
    text-transform: uppercase;
 }
 .columns__info h1{
+   width: 620px;
+   margin: 0 auto;
    padding: 20px 0;
    font-size: 35px;
    letter-spacing: 0.05em;
    text-transform: uppercase;
 }
 .columns__info p{
+   max-width: 957px;
    margin: 0 auto;
    max-width: 85%;
    height: 95px;
@@ -520,11 +524,13 @@ a, a:visited{
    padding: 10px;
 }
 .columns__group{
+   max-width: 900px;
    margin: 0 auto;
    display: flex;
    padding: 30px 0px 0px 0px;
 }
 .columns__information{
+   margin: 0 auto;
    flex: 0 1 33.333%;
    padding: 20px 0;
 }
@@ -539,12 +545,13 @@ a, a:visited{
    text-transform: lowercase;
 }
 .columns__content{
-   max-width: 66%;
    margin: 0 auto;
+   text-align: center;
    font-size: 21px;
    line-height: 29px;
    letter-spacing: 0.05em;
    text-transform: uppercase;
+   white-space: nowrap;
 }
 .columns__text, .columns__download, .columns__professional{
    font-family: "ALS Hauss";
