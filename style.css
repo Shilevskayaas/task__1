@@ -347,7 +347,7 @@ a, a:visited{
    }
    .header__name{
       position: absolute;
-      top: 18px;
+      top: 7px;
       right: 21px;
    }
    .header__toggle{
@@ -753,6 +753,7 @@ a, a:visited{
    .columns__info h1{
       font-size: 23px;
       padding: 0;
+      width: auto;
    }   
    .columns__info p{
       font-size: 18px;
