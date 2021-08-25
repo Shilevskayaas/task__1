@@ -316,6 +316,7 @@ a, a:visited{
       min-height: 114px;
    }
    .header__row{
+      height: 114px;
       flex-direction: row-reverse;
       padding: 0;
       margin-right: 65px;
@@ -360,7 +361,7 @@ a, a:visited{
    .header__list{
       display: none;
       position: absolute;
-      top: 170px;
+      top: 150px;
       left: 0;
       background: #fff;
       width: 100%;
@@ -466,8 +467,12 @@ a, a:visited{
    text-transform: uppercase;
 }
 .columns__about p{
+   height: 100%;
    display: block;
    padding: 153px 0px 0px 0px;
+}
+.columns__about p:hover{
+   
 }
 
 .columns__about_1{
@@ -475,28 +480,24 @@ a, a:visited{
 }
 .columns__about_1:hover, .columns__about_1:active{
    background: url("img/01h.svg") top/auto no-repeat;
-   
 }
 .columns__about_2{
    background: url("img/02.svg") top/auto no-repeat;
 }
 .columns__about_2:hover, .columns__about_2:active{
    background: url("img/02h.svg") top/auto no-repeat;
-   
 }
 .columns__about_3{
    background: url("img/03.svg") top/auto no-repeat;
 }
 .columns__about_3:hover, .columns__about_3:active{
    background: url("img/03h.svg") top/auto no-repeat;
-   
 }
 .columns__about_4{
    background: url("img/04.svg") top/auto no-repeat;
 }
 .columns__about_4:hover, .columns__about_4:active{
    background: url("img/04h.svg") top/auto no-repeat;
-  
 }
 .columns__info{
    margin: 0 auto;
