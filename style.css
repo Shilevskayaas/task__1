@@ -687,7 +687,7 @@ a, a:visited{
    line-height: 24px;
    padding: 5.56vw 8vw 0px 6vw;
 }
-@media (max-width: 320px){
+@media (max-width: 375px){
    .columns__phone{
       width: 96px;
       height: 169px;
@@ -864,7 +864,7 @@ a, a:visited{
       display: none;
    }
    .columns__mobile{
-      background: url("img/telm.jpg") top/auto no-repeat;
+      background: url("img/tel.png") top/auto 169px no-repeat;
       width: 96px;
       height: 169px;
    }
