@@ -702,14 +702,14 @@ a, a:visited{
    }
    .columns__about{
       height: 100%;
-      background-size: auto 92px;
-      margin: 44px 0px 30px 0px;
+      background-size: 140px 140px;
+      margin:22px 0px 40px 0px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
    }
    .columns__about:hover, .columns__about:active{
-      background-size: auto 92px;
+      background-size: 140px 140px;
    }
    .columns__about_1, .columns__about_2, .columns__about_3{
       border: none;
@@ -717,7 +717,7 @@ a, a:visited{
    .columns__about p{
       font-size: 18px;
       line-height: 25px;
-      padding: 110px 0px 0px 0px;
+      padding: 123px 0px 0px 0px;
       white-space: nowrap;
    }
    .columns__information{
