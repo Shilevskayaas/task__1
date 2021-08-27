@@ -467,9 +467,11 @@ a, a:visited{
 }
 .columns__about_3{
    background: url("img/03.svg") top/auto no-repeat;
+   background-position-y: 7px;
 }
 .columns__about_3:hover, .columns__about_3:active{
    background: url("img/03h.svg") top/auto no-repeat;
+   background-position-y: 7px;
 }
 .columns__about_4{
    background: url("img/04.svg") top/auto no-repeat;
